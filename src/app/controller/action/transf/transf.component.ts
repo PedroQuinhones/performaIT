@@ -16,6 +16,10 @@ export class TransfComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    let verify = localStorage.getItem('usuario');
+    if(verify == null || verify == undefined){
+      this.goToInicio();
+    }
     this.form = this.formBuilder.group({
       valor: ['', Validators.required],
       conta: ['', Validators.required],
@@ -25,6 +29,10 @@ export class TransfComponent implements OnInit {
 
   goToPrincipal() {
     this.router.navigate(['/principal']);
+}
+
+  goToInicio() {
+  this.router.navigate(['/inicio']);
 }
 
 enviarTransf() {

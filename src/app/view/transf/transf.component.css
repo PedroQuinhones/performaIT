@@ -54,10 +54,13 @@ body {
     background-color: #f4f4f4;
     font-size: large;
     color: black;
+    margin-left: 20px;
   }
 
-  .button-back:hover{
-    background-color: peru;
+
+
+  .transf-new{
+    margin-left: 30px;
   }
 
   .button-transf:hover{

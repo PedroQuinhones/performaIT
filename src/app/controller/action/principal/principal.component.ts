@@ -12,7 +12,10 @@ export class PrincipalComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
+    let verify = localStorage.getItem('usuario');
+    if(verify == null || verify == undefined){
+      this.goToInicio();
+    }
   }
 
   goToInicio() {
