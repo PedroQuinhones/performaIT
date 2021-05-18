@@ -1,0 +1,38 @@
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Usuario } from 'src/app/model/usuario.model';
+
+@Component({
+  selector: 'app-login',
+  templateUrl: '../../../view/login/login.component.html',
+  styleUrls: ['../../../view/login/login.component.css']
+})
+export class LoginComponent implements OnInit {
+  form: FormGroup
+
+  constructor(
+    private router: Router,
+    private formBuilder:FormBuilder
+  ){
+
+  }
+
+  ngOnInit(){
+    this.form = this.formBuilder.group({
+      email: ['', Validators.required],
+      senha: ['', Validators.required],
+    });
+  }
+
+  goToPrincipal() {
+    if (this.form.invalid) {
+      alert('Preencha os campos Email e Senha')
+    }else{
+      let login: Usuario = new Usuario();
+      login = this.form.value;
+      localStorage.setItem('usuario', JSON.stringify(login))
+    this.router.navigate(['/principal']);
+    }
+}
+}

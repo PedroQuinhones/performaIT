@@ -1,0 +1,48 @@
+<body>
+    <div id="content">
+      <div class="phone">
+        <div class="screen">
+          <div class="top">
+            <div class="dock-left">
+              <span class="clock">22:45</span>
+            </div>     
+          </div>
+  
+          <div class="container">
+            <div class="back-icon">
+              <a class="button-back" (click)="goToPrincipal()"> <=== &nbsp; &nbsp; &nbsp; &nbsp; Nova Transferência </a>
+            </div>
+            <div class="transf">
+              VALOR <br>
+              <form class="form" [formGroup]="form">
+                <input
+                  placeholder="Valor..."
+                  type="number"
+                  name="valor"
+                  formControlName="valor"
+                />
+                <br><br><br><br>
+
+                CONTA <br>
+                <input
+                  placeholder="Conta..."
+                  type="text"
+                  name="conta"
+                  formControlName="conta"
+                />
+                <br><br><br>
+      
+                <div>
+                  <a class="button-transf" (click)="enviarTransf()"> Enviar </a>
+              </div>
+      </form>
+            </div>
+            <hr>
+         
+
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,56 @@
+<body>
+  <div id="content">
+    <div class="phone">
+      <div class="screen">
+        <div class="top">
+          <div class="dock-left">
+            <span class="clock">22:45</span>
+          </div>
+          <div class="dock">
+            <div class="sensor"></div>
+            <div class="speaker"></div>
+            <div class="camera"></div>
+          </div>
+          <div class="dock-right">
+            <div class="signal"><i class="fas fa-signal"></i></div>
+            <div class="wifi"><i class="fas fa-wifi"></i></div>
+            <div class="battery"><i class="fas fa-battery"></i></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="texto-top">
+            BANK<br> &nbsp; ito
+          </div>
+          <form class="form" [formGroup]="form">
+                    <input
+                      placeholder="Email..."
+                      type="email"
+                      name="email"
+                      formControlName="email"
+                    />
+                    <br>
+                    <input
+                      placeholder="Senha..."
+                      type="password"
+                      name="senha"
+                      formControlName="senha"
+                    />
+                    <br>
+          
+                    <div>
+                      <a class="button-login" (click)="goToPrincipal()"> Enviar </a>
+                  </div>
+                  <br><br><br>
+                  <div>
+                    <a class="button-forgot"> Recuperar Senha </a>
+                </div>
+
+          </form>
+          
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</body>
