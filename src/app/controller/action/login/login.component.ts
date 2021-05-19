@@ -30,11 +30,16 @@ export class LoginComponent implements OnInit {
 
   goToPrincipal() {
     if (this.form.invalid) {
-      alert('Preencha os campos Código de acesso e Senha')
-    }else{
+      alert('Preencha os campos Código de acesso e Senha');
+      return;
+    }    if(this.form.value.cod != 'admin' || this.form.value.senha != '1234'){
+      alert('Cod ou senha inválidos');
+      return;
+    }
+    else{
       let login: Usuario = new Usuario();
       login = this.form.value;
-      localStorage.setItem('usuario', JSON.stringify(login))
+      localStorage.setItem('usuario', JSON.stringify(login));
       this.router.navigate(['/principal']);
     }
   }

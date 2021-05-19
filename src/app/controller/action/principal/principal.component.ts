@@ -26,9 +26,10 @@ export class PrincipalComponent implements OnInit {
 
   addTransf(verifyFiltro){
     this.filtros.push(JSON.parse(verifyFiltro))
-    let soma = this.saldo + JSON.parse(verifyFiltro).valor;
+    let soma = this.saldo - JSON.parse(verifyFiltro).valor;
     this.saldo = soma;
   }
+  
   ngOnInit() {
     let verify = localStorage.getItem('usuario');
     if(verify == null || verify == undefined){
@@ -42,6 +43,8 @@ export class PrincipalComponent implements OnInit {
   }
 
   goToInicio() {
+    localStorage.removeItem('usuario');
+    localStorage.removeItem('transf');
     this.router.navigate(['/inicio']);
 }
 

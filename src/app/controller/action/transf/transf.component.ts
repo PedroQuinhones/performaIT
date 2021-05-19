@@ -46,6 +46,10 @@ enviarTransf() {
     alert('Preencha os campos Valor e Conta')
     return
   }
+  if(this.form.value.valor > 7700){ //pq é o valor inicial
+    alert('Saldo insuficiente')
+    return
+  }
   let transf: Transf = new Transf();
   transf = this.form.value;
   localStorage.setItem('transf', JSON.stringify(transf))

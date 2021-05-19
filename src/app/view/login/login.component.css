@@ -80,6 +80,10 @@ body {
     text-shadow:none;
   }
 
+  .small{
+    font-size:x-small ;
+  }
+
   .button-voltar{
     border-radius: 20px 10px;
     margin-left: 10px;
