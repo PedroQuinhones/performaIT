@@ -14,8 +14,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private router: Router,
     private formBuilder:FormBuilder
-  ){
-
+    ){
   }
 
   ngOnInit(){
@@ -27,7 +26,7 @@ export class LoginComponent implements OnInit {
 
   goToInicio() {
       this.router.navigate(['/inicio']);
-}
+  }
 
   goToPrincipal() {
     if (this.form.invalid) {
@@ -38,5 +37,6 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('usuario', JSON.stringify(login))
       this.router.navigate(['/principal']);
     }
-}
+  }
+
 }

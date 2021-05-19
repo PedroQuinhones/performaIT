@@ -16,9 +16,9 @@ export class PrincipalComponent implements OnInit {
   public transferencia:Transf = new Transf();
 
   public filtros = [
-    {valor: 230, conta:'c315'},
-    {valor: 170, conta:'56c4'},
-    {valor: 130, conta:'h1gg'},
+    {valor: 230.23, conta:'23PQ'},
+    {valor: 173, conta:'56-c4'},
+    {valor: 130.77, conta:'h1gg-0'},
 ];
   public saldo: number = 7700;
   public data:string = 'Desde o Início';
@@ -37,7 +37,7 @@ export class PrincipalComponent implements OnInit {
     let verifyFiltro = localStorage.getItem('transf');
     if(verifyFiltro){
       this.addTransf(verifyFiltro);
-      //end listaFiltro
+      //end listaFiltro 4º posição
     }
   }
 
@@ -56,20 +56,16 @@ export class PrincipalComponent implements OnInit {
 
    shuffle(filtros) {
     var currentIndex = filtros.length, temporaryValue, randomIndex;
-  
-    // While there remain elements to shuffle...
+
     while (0 !== currentIndex) {
-  
-      // Pick a remaining element...
+      
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
   
-      // And swap it with the current element.
       temporaryValue = filtros[currentIndex];
       filtros[currentIndex] = filtros[randomIndex];
       filtros[randomIndex] = temporaryValue;
     }
-  
     return filtros;
   }
 

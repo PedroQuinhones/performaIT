@@ -132,15 +132,15 @@
 
               <table>
                 <thead>
-                    <th class="n-text-hist">nº</th>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-                    <th class="valor-text-hist">Valor</th>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                    <th class="n-text-hist">nº</th>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <th class="valor-text-hist">Valor</th>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     <th class="conta-text-hist">Conta</th>
                 </thead>
                 <tbody>
                     <tr *ngFor="let filtro of filtros; let i = index">
-                        <td class="id-table">{{i}}</td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-                        <td class="valor-table">{{filtro.valor}}</td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-                        <td class="conta-table">{{filtro.conta}}</td>
+                        <td >{{i}}</td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <td >R$ {{filtro.valor}}</td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <td >{{filtro.conta}}</td>
                     </tr>
                 </tbody>
             </table>
