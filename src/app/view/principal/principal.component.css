@@ -99,8 +99,7 @@ body {
 
   .saldo{
     font-size: xx-large;
-    font-family: monospace;
-    font-style: italic;
+    font-family: NanumGothic;
     color: black;
     height: 100px;
     text-align: left;
@@ -110,8 +109,7 @@ body {
 
   .transf{
     font-size: medium;
-    font-family: sans-serif;
-    font-style: italic;
+    font-family: sans-serif; 
     color: whitesmoke;
     border-radius: 20px 20px;
     background-color: #FF1477;
@@ -126,7 +124,7 @@ body {
 
   .historico{
     font-size: large;
-    font-family: sans-serif;
+    font-family: NanumGothic;
     color: #f4f4f4;
     width: 310px;
     padding: 10px;
