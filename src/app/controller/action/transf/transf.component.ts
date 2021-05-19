@@ -49,6 +49,7 @@ enviarTransf() {
   let transf: Transf = new Transf();
   transf = this.form.value;
   localStorage.setItem('transf', JSON.stringify(transf))
+  alert('Transferência realizada com sucesso!')
   this.router.navigate(['/principal']);
 }
 }
