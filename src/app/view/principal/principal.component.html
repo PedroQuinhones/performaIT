@@ -97,11 +97,11 @@
             </div>
               <div class="dropdown-position">
                 <div class="dropdown">
-                  <button class="dropbtn">Filtro</button>
+                  <button class="dropbtn">{{data}}</button>
                   <div class="dropdown-content">
-                    <a >Desde o início</a>
-                    <a >Este mês</a>
-                    <a >3 meses</a>
+                    <a (click)="setarFiltroInicioRsRs()">Desde o início</a>
+                    <a (click)="setarFiltroEsteMesRsRs()">Este mês</a>
+                    <a (click)="setarFiltro3MesesRsRs()">3 meses</a>
                   </div>
                 </div>
               </div><br>

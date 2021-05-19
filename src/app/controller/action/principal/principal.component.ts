@@ -21,6 +21,7 @@ export class PrincipalComponent implements OnInit {
     {valor: 130, conta:'h1gg'},
 ];
   public saldo: number = 7700;
+  public data:string = 'Desde o Início';
 
 
   addTransf(verifyFiltro){
@@ -46,6 +47,40 @@ export class PrincipalComponent implements OnInit {
 
   goToTransf() {
     this.router.navigate(['/transf']);
+  }
+
+  setarFiltroInicioRsRs(){
+    this.data = 'Desde o Início';
+    this.shuffle(this.filtros)
+  }
+
+   shuffle(filtros) {
+    var currentIndex = filtros.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = filtros[currentIndex];
+      filtros[currentIndex] = filtros[randomIndex];
+      filtros[randomIndex] = temporaryValue;
+    }
+  
+    return filtros;
+  }
+
+  setarFiltroEsteMesRsRs(){
+    this.data = 'Este Mês';
+    this.shuffle(this.filtros)
+  }
+
+  setarFiltro3MesesRsRs(){
+    this.data = '3 Meses';
+    this.shuffle(this.filtros)
   }
 
 }

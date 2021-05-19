@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       let login: Usuario = new Usuario();
       login = this.form.value;
       localStorage.setItem('usuario', JSON.stringify(login))
-    this.router.navigate(['/principal']);
+      this.router.navigate(['/principal']);
     }
 }
 }
