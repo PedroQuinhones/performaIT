@@ -1,5 +1,9 @@
 # Bankito
 
+Projeto básico construído de maneira básica e rápida para teste PerformaIT.
+Não foi utilizada nenhuma dependência para CSS como bootstrap, Angular Material, etc...
+OBS: Não foram encontrados os caminhos da API no link da documentação enviada por e-mail :///
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
 ## Development server
