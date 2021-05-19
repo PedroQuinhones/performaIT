@@ -20,10 +20,13 @@ export class PrincipalComponent implements OnInit {
     {valor: 170, conta:'56c4'},
     {valor: 130, conta:'h1gg'},
 ];
+  public saldo: number = 7700;
 
 
   addTransf(verifyFiltro){
     this.filtros.push(JSON.parse(verifyFiltro))
+    let soma = this.saldo + JSON.parse(verifyFiltro).valor;
+    this.saldo = soma;
   }
   ngOnInit() {
     let verify = localStorage.getItem('usuario');
