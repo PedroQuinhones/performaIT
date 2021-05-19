@@ -31,10 +31,10 @@ body {
   .screen {
     width: calc(100% - 10px);
     height: calc(100% - 10px);
-    background: #f4f4f4;
+    background: white;
     border-radius: 30px;
     overflow: hidden!important;
-    background-image: #f4f4f4;
+    background-image: white;
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: cover;
@@ -50,8 +50,8 @@ body {
   }
 
   .back-icon{
-    text-align: left;
-    background-color: #f4f4f4;
+    height: 40px;
+    background-color: white;
     font-size: large;
     color: black;
     margin-left: 20px;
@@ -67,8 +67,22 @@ body {
     background-color: peru;
   }
 
+  .button-back{
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  .button-back:hover{
+    background-color: peru;
+    border-radius: 20px 20px;
+  }
+
   .button-transf{
     font-size: xx-large;
+  }
+
+  .transf-new{
+    margin-left: 60px;
   }
 
 

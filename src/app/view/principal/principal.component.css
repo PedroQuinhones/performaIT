@@ -83,10 +83,12 @@ body {
 
   .button-back:hover{
     background-color: peru;
+    border-radius: 20px 20px;
   }
 
   .button-transf:hover{
     background-color: peru;
+    border-radius: 10px 10px;
   }
 
   .button-transf{
