@@ -20,14 +20,14 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(){
     this.form = this.formBuilder.group({
-      email: ['', Validators.required],
+      cod: ['', Validators.required],
       senha: ['', Validators.required],
     });
   }
 
   goToPrincipal() {
     if (this.form.invalid) {
-      alert('Preencha os campos Email e Senha')
+      alert('Preencha os campos Código de acesso e Senha')
     }else{
       let login: Usuario = new Usuario();
       login = this.form.value;

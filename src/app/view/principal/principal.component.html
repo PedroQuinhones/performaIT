@@ -91,17 +91,35 @@
 
             <div class="historico">
               <div class="text-historico">
-              Extrato <br> 
+              <div class="extrato-text">
+              Extrato 
+            </div>
+              <div class="dropdown-position">
+                <div class="dropdown">
+                  <button class="dropbtn">Filtro</button>
+                  <div class="dropdown-content">
+                    <a >Desde o início</a>
+                    <a >Este mês</a>
+                    <a >3 meses</a>
+                  </div>
+                </div>
+              </div><br>
 
-              <small>Transferência recebida &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R$ 150,00</small>
-              <hr>
-              <small>Transferência realizada &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R$ 170,00</small>
-              <hr>
-              <small>Transferência reebida &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R$ 250,00</small>
-              <hr>
-              <small>Transferência realizada &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R$ 30,00</small>
-              <hr>
-              <small>Transferência recebida &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R$ 990,00</small>
+              <table>
+                <thead>
+                    <th class="n-text-hist">nº</th>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                    <th class="valor-text-hist">Valor</th>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                    <th class="conta-text-hist">Conta</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let filtro of filtros; let i = index">
+                        <td class="id-table">{{i}}</td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                        <td class="valor-table">{{filtro.valor}}</td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                        <td class="conta-table">{{filtro.conta}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
             </div>
             </div>
 

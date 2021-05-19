@@ -1,5 +1,5 @@
 export class Transf {
-    valor: number;
+    valor: string;
     conta: string;
   
     constructor() {

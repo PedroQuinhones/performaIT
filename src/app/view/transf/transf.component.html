@@ -40,6 +40,7 @@
                   type="number"
                   name="valor"
                   formControlName="valor"
+                  [(ngModel)]="valor"
                 />
                 <br><br><br><br>
 
@@ -49,8 +50,13 @@
                   type="text"
                   name="conta"
                   formControlName="conta"
+                  [(ngModel)]="conta"
                 />
                 <br><br><br>
+                <span class="resumo-text">RESUMO</span><br>
+                R$ {{valor}}<br>
+                C.C: {{conta}}
+                <br><br>
       
                 <div>
                   <a class="button-transf" (click)="enviarTransf()"> Enviar </a>

@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Transf } from 'src/app/model/transf.model';
+import { PrincipalComponent } from '../principal/principal.component';
 
 @Component({
   selector: 'app-transf',
@@ -9,11 +10,16 @@ import { Transf } from 'src/app/model/transf.model';
   styleUrls: ['../../../view/transf/transf.component.css']
 })
 export class TransfComponent implements OnInit {
+
   form:FormGroup
+  valor: number;
+  conta: string;
+ 
   constructor(
       private router: Router,
       private formBuilder: FormBuilder
-  ) { }
+  ) { 
+  }
 
   ngOnInit() {
     let verify = localStorage.getItem('usuario');
@@ -43,7 +49,6 @@ enviarTransf() {
   let transf: Transf = new Transf();
   transf = this.form.value;
   localStorage.setItem('transf', JSON.stringify(transf))
-  alert('Transferência realizada')
-  this.router.navigate(['/inicio']);
+  this.router.navigate(['/principal']);
 }
 }

@@ -67,6 +67,7 @@ body {
   }
 
   .button-inicio{
+    border-radius: 10px 20px;
     margin-left: 250px;
     background: rgb(236, 32, 66);
     color: white;

@@ -1,5 +1,5 @@
 export class Usuario {
-    email: number;
+    cod: string;
     senha: string;
   
     constructor() {

@@ -151,3 +151,7 @@ body {
     width: 100%;
     color:black
 }
+
+.resumo-text{
+  text-decoration: underline;
+}
