@@ -25,6 +25,10 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  goToInicio() {
+      this.router.navigate(['/inicio']);
+}
+
   goToPrincipal() {
     if (this.form.invalid) {
       alert('Preencha os campos Código de acesso e Senha')

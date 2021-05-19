@@ -35,7 +35,7 @@ body {
     background: #c0b4b4;
     border-radius: 30px;
     overflow: hidden!important;
-    background-image: url("../../../assets/background.png");
+    background-color: #202020;
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: cover;
@@ -56,7 +56,7 @@ body {
     font-style: italic;
     color: white;
     margin-top: 50px;
-    margin-left: 30px;
+    margin-left: 115px;
   }
 
   .form{
@@ -69,7 +69,7 @@ body {
 
   .button-login{
     border-radius: 20px 10px;
-    margin-left: 60px;
+    margin-left: 50px;
     background: rgb(236, 32, 66);
     color: white;
     border-style: outset;
@@ -78,6 +78,24 @@ body {
     width: 100px;
     font: bold 15px arial, sans-serif;
     text-shadow:none;
+  }
+
+  .button-voltar{
+    border-radius: 20px 10px;
+    margin-left: 10px;
+    background: rgb(236, 32, 66);
+    color: white;
+    border-style: outset;
+    border-color: rgb(236, 32, 66);
+    height: 50px;
+    width: 100px;
+    font: bold 15px arial, sans-serif;
+    text-shadow:none;
+  }
+
+  .form .input{
+    border-style: none;
+    background-color: #202020;
   }
 
   .button-forgot{
@@ -94,6 +112,10 @@ body {
   }
 
   .button-login:hover{
+    background-color: peru;
+  }
+
+  .button-voltar:hover{
     background-color: peru;
   }
 
