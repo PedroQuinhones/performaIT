@@ -70,10 +70,10 @@ body {
   .button-login{
     border-radius: 20px 10px;
     margin-left: 50px;
-    background: rgb(236, 32, 66);
+    background: #FF1477;
     color: white;
     border-style: outset;
-    border-color: rgb(236, 32, 66);
+    border-color: #FF1477;
     height: 50px;
     width: 100px;
     font: bold 15px arial, sans-serif;
@@ -87,10 +87,10 @@ body {
   .button-voltar{
     border-radius: 20px 10px;
     margin-left: 10px;
-    background: rgb(236, 32, 66);
+    background: #FF1477;
     color: white;
     border-style: outset;
-    border-color: rgb(236, 32, 66);
+    border-color: #FF1477;
     height: 50px;
     width: 100px;
     font: bold 15px arial, sans-serif;
@@ -103,7 +103,7 @@ body {
   }
 
   .button-forgot{
-    margin-left: 20px;
+    margin-left: 25px;
     color: white;
     height: 50px;
     width: 100px;

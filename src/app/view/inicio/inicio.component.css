@@ -34,7 +34,7 @@ body {
     background: #c0b4b4;
     border-radius: 30px;
     overflow: hidden!important;
-    background-image: url("../../../assets/background.png");
+    background-color: #202020;
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: cover;
@@ -44,17 +44,17 @@ body {
     font-size: xx-large;
     font-family: monospace;
     font-style: italic;
-    color: gray;
+    color: #FFFFFF;
     margin-top: 70px;
     margin-left: 30px;
   }
 
   .completo{
-    color: rgb(236, 32, 66);
+    color: #FF1477;
   }
 
   .tarifas{
-    color: rgb(236, 32, 66);
+    color: #FF1477;
   }
 
   .texto-top{
@@ -69,10 +69,10 @@ body {
   .button-inicio{
     border-radius: 10px 20px;
     margin-left: 250px;
-    background: rgb(236, 32, 66);
+    background: #FF1477;
     color: white;
     border-style: double;
-    border-color: rgb(236, 32, 66);
+    border-color: #FF1477;
     height: 50px;
     width: 100px;
     font: bold 15px arial, sans-serif;
