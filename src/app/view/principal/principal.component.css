@@ -42,7 +42,7 @@ body {
     background: #c0b4b4;
     border-radius: 30px;
     overflow: hidden!important;
-    background-image: url("../../../assets/background.png");
+    background-color:#202020;
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: cover;
@@ -112,15 +112,16 @@ body {
     font-size: medium;
     font-family: sans-serif;
     font-style: italic;
-    color: black;
+    color: whitesmoke;
     border-radius: 20px 20px;
-    background-color: plum;
+    background-color: #FF1477;
     width: 310px;
     height: 80px;
   }
 
   .text-transf{
     text-align: center;
+    font-weight: bold;
   }
 
   .historico{
@@ -193,7 +194,7 @@ body {
 
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: plum;
+  background-color: #FF1477;
   color: black;
   padding: 10px;
   font-size: 12px;
