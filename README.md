@@ -3,7 +3,7 @@
 Projeto básico construído todo "à mão", de maneira básica e rápida para teste PerformaIT.
 Não foi utilizada nenhuma dependência para CSS como bootstrap, Angular Material, etc...
 OBS: Não foram encontrados os caminhos da API no link da documentação enviada por e-mail :///
-OBS 2: Para subit no StackBlitz creio que seja necessária aa versão PRO deles, que é paga :///
+OBS 2: Para subir no StackBlitz creio que seja necessária a versão PRO deles, que é paga (tentei arrastar e soltar os projetos no local)
 
 *** Após clonar o projeto do GitHub, executar o comando "npm install" ***
 
